@@ -26,24 +26,24 @@ class Character:
     
 
 class Warrior(Character):
-    def __init__(self, name: str, health: int) -> None:
-        super().__init__(name, 100,)
+    def __init__(self, name: str):
+        super().__init__(name, health=150)  # Default health for Warrior
        
 
 
 class Mage(Character):
-    def __init__(self, name: str, health: int, mana: int = 100) -> None:
-        super().__init__(name, 60)
-        self.mana = mana  # Mana for spell casting
+    def __init__(self, name: str):
+        super().__init__(name, health=100)  # Default health for Mage
+        self.mana = 100  # Default mana for Mage
         self.spells = dark_spells  # Load dark spells
       
 
 
 # Cleric class that loads light spells and has mana
 class Cleric(Character):
-    def __init__(self, name: str, health: int, mana: int = 100) -> None:
-        super().__init__(name, 75)
-        self.mana = mana  # Mana for spell casting
+    def __init__(self, name: str):
+        super().__init__(name, health=120)
+        self.mana = 100  # Mana for spell casting
         self.spells = light_spells  # Load light spells
 
 
