@@ -14,8 +14,8 @@ def create_character():
     chosen_class = choose_class()
 
     if chosen_class == "Warrior":
-        return Warrior(character_name,100)
+        return Warrior(character_name)
     elif chosen_class == "Mage":
-        return Mage(character_name, 60, 100)
+        return Mage(character_name)
     elif chosen_class == "Cleric":
         return Cleric(character_name)
