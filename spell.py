@@ -54,7 +54,7 @@ class Heal(HealingSpell):
         super().__init__("Heal", "Light", 15, 25)  # Mana cost is 15, heals 25
 
 
-class HolyLight(HealingSpell):
+class HolyLight(DamageSpell):
     def __init__(self) -> None:
         super().__init__("Holy Light", "Light", 25, 35)  # Mana cost is 25, heals 35
 
